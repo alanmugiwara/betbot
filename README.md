@@ -1,6 +1,8 @@
 # Juh Fortalece: chatbot da clínica 'Cuidando de Você'
 
-Este é um chatbot para Telegram que simula uma recepcionista humana chamada Juh Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora.
+Este é um chatbot para Telegram que simula uma recepcionista humana chamada Juh Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora. 
+
+Juh fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 nas terras soteropolitanas [Beth Fortacele no youtube](https://www.youtube.com/watch?v=sPK7JUE68dU)
 
 ## Funcionalidades
 
