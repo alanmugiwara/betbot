@@ -1,4 +1,4 @@
-# Juh Fortalece - Chatbot para clínica fíctícia 'Cuidando de Você'
+# Juh Fortalece: chatbot da clínica fíctícia 'Cuidando de Você'
 
 Este é um chatbot para Telegram que simula uma recepcionista humana chamada Juh Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora.
 
@@ -53,8 +53,7 @@ Este projeto é licenciado sob a licença [GPL-3.0 license] - consulte�
 ## Como Executar
 
 1. **Obtenha uma chave de API do Google AI Platform:**
-   - Acesse [Google Cloud Console](https://console.cloud.google.com/) e crie um projeto.
-   - Ative a API da Google AI Platform.
+   - Acesse [Google AI Studio](https://aistudio.google.com/app/).
    - Crie uma chave de API e copie-a.
 
 2. **Crie um bot no Telegram:**
