@@ -2,7 +2,9 @@
 
 Este é um chatbot para Telegram que simula uma recepcionista humana chamada Juh Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora. 
 
-Juh fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 nas terras soteropolitanas [Beth Fortacele no youtube](https://www.youtube.com/watch?v=sPK7JUE68dU)
+Juh fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em terras soteropolitanas.
+
+[Beth Fortacele no youtube](https://www.youtube.com/watch?v=sPK7JUE68dU)
 
 ## Funcionalidades
 
@@ -14,9 +16,10 @@ Juh fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 nas te
 
 ## Tecnologias Utilizadas
 
-- **Python:** Linguagem de programação principal.
-- [Google AI Platform](https://cloud.google.com/ai-platform/): Plataforma para acessar o modelo de linguagem Gemini Pro.
+- [Python](https://cloud.google.com/ai-platform/): Linguagem de programação principal.
+- [Google AI Platform](https://aistudio.google.com/app/): Plataforma para acessar o modelo de linguagem Gemini Pro e gerar a API Key.
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot): Biblioteca Python para interagir com a API do Telegram.
+- [google-generativeai](https://pypi.org/project/google-generativeai/): Biblioteca de AI do Gemini para interagir com a API do Google.
 
 
 Para que o bot fique online 24/7, você precisará hospedá-lo em um servidor. Plataformas como [Heroku](https://www.heroku.com/), [PythonAnywhere](https://www.pythonanywhere.com/), [Google Cloud Platform](https://cloud.google.com/) e [Amazon Web Services](https://aws.amazon.com/) oferecem opções de hospedagem para bots do Telegram. Consulte a documentação da plataforma escolhida para obter instruções de implantação.
@@ -24,8 +27,8 @@ Para que o bot fique online 24/7, você precisará hospedá-lo em um servidor. P
 Personalização
 --------------
 
--   Adapte o contexto: Modifique a variável `instrucao_sistema` na função `obter_resposta_gemini` para personalizar o contexto do bot com as informações da sua clínica.
--   Ajuste a personalidade: Experimente diferentes prompts e instruções no contexto para ajustar a personalidade e o tom de voz do bot.
+-   Adapte o contexto: Modifique a variável `instrucao_sistema` na função `obter_resposta_gemini` para personalizar o contexto do bot com as informações do seu interesse.
+-   Ajuste a personalidade: Experimente diferentes prompts e instruções no contexto para ajustar a personalidade do bot.
 -   Adicione novas funcionalidades: Utilize a biblioteca `python-telegram-bot` para adicionar mais recursos ao seu bot, como botões, menus inline, etc.
 
 Demonstração
@@ -33,7 +36,7 @@ Demonstração
 
 ![Demonstração](https://github.com/alanmugiwara/alanmugiwara.github.io/blob/main/img/juh.gif?raw=true)
 
-Converse com a Juh [Jug Fortalece Telgram Bot](https://t.me/juh_fortalece_bot).
+Converse com a Juh [Juh Fortalece Telgram Bot](https://t.me/juh_fortalece_bot).
 
 Contato
 -------
@@ -52,6 +55,15 @@ Licença
 Este projeto é licenciado sob a licença [GPL-3.0 license] - consulte o arquivo [LICENÇA](https://github.com/alanmugiwara/juh_bot?tab=GPL-3.0-1-ov-file) para obter detalhes.
 * * * * *
 
+Compatbilidade
+-------
+
+python-telegram-bot: A versão mínima do Python para utilizar a biblioteca é `a 3.7.`
+
+google-generativeai: A versão mínima do Python para utilizar a biblioteca é `a 3.8.`
+* * * * *
+
+
 ## Como Executar
 
 1. **Obtenha uma chave de API do Google AI Platform:**
@@ -64,7 +76,7 @@ Este projeto é licenciado sob a licença [GPL-3.0 license] - consulte�
    - Anote o token de acesso que o BotFather fornecerá.
 
 3. **Configure as variáveis de ambiente:**
-   - No código-fonte do bot (jujuh-telegarm-bot.py), substitua `API-KEY` pela sua chave de API e `API-KEY` pelo token do seu bot.
+   - No código-fonte do bot (jujuh-telegarm-bot.py), substitua `API-KEY` em GOOGLE_API_KEY pela sua chave de API e `API-KEY` em BOT_TOKEN pelo token do seu bot do Telegram.
 
 4. **Instale as bibliotecas necessárias:**
    ```bash
