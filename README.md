@@ -10,8 +10,9 @@
 [![maintainability](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/maintainability)](https://codeclimate.com/github/alanmugiwara/juh_bot/maintainability) 
 [![test Coverage](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/test_coverage)](https://codeclimate.com/github/alanmugiwara/juh_bot/test_coverage)
 
-[![last release](https://img.shields.io/github/v/release/alanmugiwara/juh_bot)](https://github.com/alanmugiwara)
+[![last release](https://img.shields.io/github/v/release/alanmugiwara/juh_bot?color=8A2BE2&label=release&style=flat)](https://github.com/alanmugiwara)
 [![downloads counter](https://img.shields.io/github/downloads/alanmugiwara/juh_bot/total?color=8A2BE2)](https://github.com/alanmugiwara)
+
 
 # Juh Fortalece: chatbot da clínica 'Cuidando de Você'
 
