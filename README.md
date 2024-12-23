@@ -1,3 +1,18 @@
+[![made Language {generic badge}](https://img.shields.io/badge/Made%20with-Python%203-8A2BE2)](https://github.com/alanmugiwara)
+[![create date](https://badges.pufler.dev/created/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![last update date](https://badges.pufler.dev/Updated/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![Commits Badge](https://img.shields.io/github/commit-activity/m/alanmugiwara/juh_bot.svg?color=8A2BE2)](https://github.com/alanmugiwara)
+
+[![contributors](https://img.shields.io/github/contributors/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![issues counter](https://img.shields.io/github/issues/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![repo size](https://img.shields.io/github/repo-size/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![directory size](https://img.shields.io/github/directory-file-count/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![maintainability](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/maintainability)](https://codeclimate.com/github/alanmugiwara/juh_bot/maintainability) 
+[![test Coverage](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/test_coverage)](https://codeclimate.com/github/alanmugiwara/juh_bot/test_coverage)
+
+[![last release](https://img.shields.io/github/v/release/alanmugiwara/romkeepilson2)](https://github.com/alanmugiwara)
+[![downloads counter](https://img.shields.io/github/downloads/alanmugiwara/juh_bot/total)](https://github.com/alanmugiwara)
+
 # Juh Fortalece: chatbot da clínica 'Cuidando de Você'
 
 Este é um chatbot para Telegram que simula uma recepcionista humana chamada Juh Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora. 
