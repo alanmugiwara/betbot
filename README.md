@@ -1,32 +1,32 @@
 [![made Language {generic badge}](https://img.shields.io/badge/Made%20with-Python%203-8A2BE2)](https://github.com/alanmugiwara)
-[![create date](https://badges.pufler.dev/created/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
-[![last update date](https://badges.pufler.dev/Updated/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
-[![Commits Badge](https://img.shields.io/github/commit-activity/m/alanmugiwara/juh_bot.svg?color=8A2BE2)](https://github.com/alanmugiwara)
-[![last release](https://img.shields.io/github/v/release/alanmugiwara/juh_bot?color=8A2BE2&label=release&style=flat)](https://github.com/alanmugiwara)
-[![downloads counter](https://img.shields.io/github/downloads/alanmugiwara/juh_bot/total?color=8A2BE2)](https://github.com/alanmugiwara)
+[![create date](https://badges.pufler.dev/created/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![last update date](https://badges.pufler.dev/Updated/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![Commits Badge](https://img.shields.io/github/commit-activity/m/alanmugiwara/betbot.svg?color=8A2BE2)](https://github.com/alanmugiwara)
+[![last release](https://img.shields.io/github/v/release/alanmugiwara/betbot?color=8A2BE2&label=release&style=flat)](https://github.com/alanmugiwara)
+[![downloads counter](https://img.shields.io/github/downloads/alanmugiwara/betbot/total?color=8A2BE2)](https://github.com/alanmugiwara)
 
-[![contributors](https://img.shields.io/github/contributors/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
-[![issues counter](https://img.shields.io/github/issues/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
-[![repo size](https://img.shields.io/github/repo-size/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
-[![directory size](https://img.shields.io/github/directory-file-count/alanmugiwara/juh_bot?color=8A2BE2)](https://github.com/alanmugiwara)
-[![maintainability](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/maintainability)](https://codeclimate.com/github/alanmugiwara/juh_bot/maintainability) 
-[![test Coverage](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/test_coverage)](https://codeclimate.com/github/alanmugiwara/juh_bot/test_coverage)
+[![contributors](https://img.shields.io/github/contributors/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![issues counter](https://img.shields.io/github/issues/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![repo size](https://img.shields.io/github/repo-size/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![directory size](https://img.shields.io/github/directory-file-count/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
+[![maintainability](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/maintainability)](https://codeclimate.com/github/alanmugiwara/betbot/maintainability) 
+[![test Coverage](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/test_coverage)](https://codeclimate.com/github/alanmugiwara/betbot/test_coverage)
 
-# Juh Fortalece: chatbot da clínica 'Cuidando de Você'
+# Beti Fortalece: chatbot da clínica 'Cuidando de Você'
 
-Este é um chatbot para Telegram que simula uma recepcionista humana chamada Juh Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora. 
+Este é um chatbot para Telegram que simula uma recepcionista humana chamada Beti Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora. 
 
-Juh fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em terras soteropolitanas.
+Beti Fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em terras soteropolitanas.
 
-[Beth Fortacele no youtube](https://www.youtube.com/watch?v=sPK7JUE68dU)
+[Beti Fortacele no youtube](https://www.youtube.com/watch?v=sPK7JUE68dU)
 
 ## Funcionalidades
 
-- **Personalidade Simulada:** Juh Fortalece possui uma personalidade amigável e acolhedora, simulando uma recepcionista humana.
+- **Personalidade Simulada:** A Beti possui uma personalidade amigável e acolhedora, simulando uma recepcionista humana.
 - **Informações da Clínica:** Fornecimento de informações sobre a localização, especialidades, planos de saúde aceitos e valores das consultas da clínica.
 - **Menu Interativo:** Navegação por um menu de opções para acessar informações desejadas através de números.
 - **Respostas Inteligentes:** Utilização do modelo Gemini Pro para responder a perguntas gerais de forma inteligente e contextualizada.
-- **Detecção de Nomes:** Juh Fortalece usa expressões regulares para identificar o nome do usuário nas mensagens e personalizar as interações.
+- **Detecção de Nomes:** A Beti usa expressões regulares para identificar o nome do usuário nas mensagens e personalizar as interações.
 
 ## Tecnologias Utilizadas
 
@@ -50,7 +50,7 @@ Demonstração
 
 ![Demonstração](https://github.com/alanmugiwara/alanmugiwara.github.io/blob/main/img/juh.gif?raw=true)
 
-Converse com a Juh [Juh Fortalece Telgram Bot](https://t.me/juh_fortalece_bot).
+Converse com a Beti [Beti Fortalece - Telgram Bot](https://t.me/BetiFortalece_bot).
 
 Contato
 -------
@@ -66,7 +66,7 @@ Para dúvidas, sugestões ou problemas, entre em contato com Álan Cruz:
 Licença
 -------
 
-Este projeto é licenciado sob a licença [GPL-3.0 license] - consulte o arquivo [LICENÇA](https://github.com/alanmugiwara/juh_bot?tab=GPL-3.0-1-ov-file) para obter detalhes.
+Este projeto é licenciado sob a licença [GPL-3.0 license] - consulte o arquivo [LICENÇA](https://github.com/alanmugiwara/betbot?tab=GPL-3.0-1-ov-file) para obter detalhes.
 * * * * *
 
 Compatbilidade
@@ -74,7 +74,7 @@ Compatbilidade
 
 python-telegram-bot: A versão mínima do Python para utilizar a biblioteca é `a 3.7.`
 
-google-generativeai: A versão mínima do Python para utilizar a biblioteca é `a 3.8.`
+google-generativeai: A versão mínima do Python para utilizar a biblioteca é `a 3.9.`
 * * * * *
 
 
@@ -90,7 +90,7 @@ google-generativeai: A versão mínima do Python para utilizar a biblioteca é `
    - Anote o token de acesso que o BotFather fornecerá.
 
 3. **Configure as variáveis de ambiente:**
-   - No código-fonte do bot (jujuh-telegarm-bot.py), substitua `API-KEY` em GOOGLE_API_KEY pela sua chave de API e `API-KEY` em BOT_TOKEN pelo token do seu bot do Telegram.
+   - No código-fonte do bot (beti.py), substitua `API-KEY` em GOOGLE_API_KEY pela sua chave de API e `API-KEY` em BOT_TOKEN pelo token do seu bot do Telegram.
 
 4. **Instale as bibliotecas necessárias:**
    ```bash
