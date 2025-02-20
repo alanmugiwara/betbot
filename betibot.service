@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+name="betibot"
+description="Run betibot script service"
+command="/usr/bin/python3"
+command_args="/home/betbot/beti.py"
+command_user="root"
+pidfile="/var/run/${RC_SVCNAME}.pid"
+
+depend() {
+    need net
+}
