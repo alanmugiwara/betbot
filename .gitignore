@@ -124,7 +124,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+env_backup
 .venv
 env/
 venv/
@@ -178,7 +178,6 @@ poetry.toml
 *.exe
 *.cfg
 *activate
-*.env
 
 # LSP config files
 pyrightconfig.json
