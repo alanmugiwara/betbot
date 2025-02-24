@@ -91,7 +91,7 @@ google-generativeai: A versão mínima do Python para utilizar a biblioteca é `
    pip install -r requirements
     ```
 
-   Contato
+Contato
 -------
 
 Para dúvidas, sugestões ou problemas, entre em contato com Álan Cruz:
