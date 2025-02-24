@@ -35,8 +35,19 @@ Beti Fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em te
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot): Biblioteca Python para interagir com a API do Telegram.
 - [google-generativeai](https://pypi.org/project/google-generativeai/): Biblioteca de AI do Gemini para interagir com a API do Google.
 
+## Containerização
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-Betbot-2496ED?logo=docker)](https://hub.docker.com/repository/docker/alanmugiwara/betbot/general)
 
-Para que o bot fique online 24/7, você precisará hospedá-lo em um servidor. Plataformas como [Heroku](https://www.heroku.com/), [PythonAnywhere](https://www.pythonanywhere.com/), [Google Cloud Platform](https://cloud.google.com/) e [Amazon Web Services](https://aws.amazon.com/) oferecem opções de hospedagem para bots do Telegram. Consulte a documentação da plataforma escolhida para obter instruções de implantação.
+O projeto está containerizado e disponível no Docker Hub. O container pode ser criado para arquiteturas arm64 e amd64.
+
+Para executar o container:
+```
+docker pull alanmugiwara/betbot
+docker run -d --name betbot alanmugiwara/betbot
+```
+
+## Implantação
+Para que o bot fique online 24/7, além do container você também pode hospedar o script junto às variáveis de ambinente em um servidor. Plataformas como [Heroku](https://www.heroku.com/), [PythonAnywhere](https://www.pythonanywhere.com/), [Google Cloud Platform](https://cloud.google.com/) e [Amazon Web Services](https://aws.amazon.com/) oferecem opções de hospedagem para bots do Telegram. Consulte a documentação da plataforma escolhida para obter instruções de implantação.
 
 Personalização
 --------------
@@ -45,14 +56,42 @@ Personalização
 -   Ajuste a personalidade: Experimente diferentes prompts e instruções no contexto para ajustar a personalidade do bot.
 -   Adicione novas funcionalidades: Utilize a biblioteca `python-telegram-bot` para adicionar mais recursos ao seu bot, como botões, menus inline, etc.
 
-Demonstração
+## Demonstração
 ------------
 
-![Demonstração](https://github.com/alanmugiwara/alanmugiwara.github.io/blob/main/img/juh.gif?raw=true)
+![Demonstração](https://github.com/alanmugiwara/alanmugiwara.github.io/blob/main/img/bet_demo.gif?raw=true)
 
-Converse com a Beti [Beti Fortalece - Telgram Bot](https://t.me/BetiFortalece_bot).
+Converse com a Beti [Beti Fortalece - Telgram Bot](https://t.me/BetiFortalece_bot)
 
-Contato
+## Compatbilidade
+-------
+
+python-telegram-bot: A versão mínima do Python para utilizar a biblioteca é `a 3.7.`
+
+google-generativeai: A versão mínima do Python para utilizar a biblioteca é `a 3.9.`
+* * * * *
+
+## Como Executar
+
+1. **Obtenha uma chave de API do Google AI Platform:**
+   - Acesse [Google AI Studio](https://aistudio.google.com/app/).
+   - Crie uma chave de API e copie-a.
+
+2. **Crie um bot no Telegram:**
+   - No Telegram, procure por [@BotFather](https://t.me/BotFather).
+   - Envie o comando `/newbot` e siga as instruções.
+   - Anote o token de acesso que o BotFather fornecerá.
+
+3. **Configure as variáveis de ambiente:**
+   - No código-fonte, na arquivo "bet_bot\app.env", substitua `API-KEY` em GOOGLE_API_KEY pela sua chave de API do Gemini e `API-KEY` em BOT_TOKEN pelo token do seu bot do Telegram.
+
+4. **Instale as bibliotecas necessárias:**
+   - Abra o terminal na pasta raiz do projeto e rode o requirements.
+   ```bash
+   pip install -r requirements
+    ```
+
+   Contato
 -------
 
 Para dúvidas, sugestões ou problemas, entre em contato com Álan Cruz:
@@ -68,30 +107,3 @@ Licença
 
 Este projeto é licenciado sob a licença [GPL-3.0 license] - consulte o arquivo [LICENÇA](https://github.com/alanmugiwara/betbot?tab=GPL-3.0-1-ov-file) para obter detalhes.
 * * * * *
-
-Compatbilidade
--------
-
-python-telegram-bot: A versão mínima do Python para utilizar a biblioteca é `a 3.7.`
-
-google-generativeai: A versão mínima do Python para utilizar a biblioteca é `a 3.9.`
-* * * * *
-
-
-## Como Executar
-
-1. **Obtenha uma chave de API do Google AI Platform:**
-   - Acesse [Google AI Studio](https://aistudio.google.com/app/).
-   - Crie uma chave de API e copie-a.
-
-2. **Crie um bot no Telegram:**
-   - No Telegram, procure por [@BotFather](https://t.me/BotFather).
-   - Envie o comando `/newbot` e siga as instruções.
-   - Anote o token de acesso que o BotFather fornecerá.
-
-3. **Configure as variáveis de ambiente:**
-   - No código-fonte do bot (beti.py), substitua `API-KEY` em GOOGLE_API_KEY pela sua chave de API e `API-KEY` em BOT_TOKEN pelo token do seu bot do Telegram.
-
-4. **Instale as bibliotecas necessárias:**
-   ```bash
-   pip install python-telegram-bot google-generativeai
