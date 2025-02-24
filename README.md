@@ -83,7 +83,7 @@ google-generativeai: A versão mínima do Python para utilizar a biblioteca é `
    - Anote o token de acesso que o BotFather fornecerá.
 
 3. **Configure as variáveis de ambiente:**
-   - No código-fonte, na arquivo "bet_bot\app.env", substitua `API-KEY` em GOOGLE_API_KEY pela sua chave de API do Gemini e `API-KEY` em BOT_TOKEN pelo token do seu bot do Telegram.
+   - No código-fonte, na arquivo "betbot\app.env", substitua `API-KEY` em GOOGLE_API_KEY pela sua chave de API do Gemini e `API-KEY` em BOT_TOKEN pelo token do seu bot do Telegram.
 
 4. **Instale as bibliotecas necessárias:**
    - Abra o terminal na pasta raiz do projeto e rode o requirements.
