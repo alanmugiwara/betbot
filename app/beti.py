@@ -42,7 +42,7 @@ safety_settings = {
 
 # Definição do modelo de IA que será utilizado:
 model = genai.GenerativeModel(
-    "gemini-pro", generation_config=generation_config, safety_settings=safety_settings
+    "gemini-2.0-flash", generation_config=generation_config, safety_settings=safety_settings
 )
 # Modelos disponíveis
 # gemini-1.0-pro
