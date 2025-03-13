@@ -6,13 +6,14 @@ ENV PYTHONUNBUFFERED=1
 # Define diretório de trabalho
 WORKDIR /app
 
-# Copar a pasta de trabalho
+# Copia a pasta de trabalho pro diretório padrão
 COPY app /app
 
-# Instala as dependências do Python
+# Instala as dependências do Python sem cache e cria o usuário beti
 RUN pip install --no-cache-dir -r requirements.txt && adduser -S -H beti
 
+# Loga com o usuário Beti
 USER beti
 
-# Define o comando de inicialização do contêiner
+# Define o comando de inicialização do container
 ENTRYPOINT ["python", "/app/beti.py"]
