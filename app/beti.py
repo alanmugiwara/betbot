@@ -40,9 +40,11 @@ safety_settings = {
     "DANGEROUS": "BLOCK_NONE",  # Nível de bloqueio de perigo
 }
 
-# Definição do modelo de IA que será utilizado:
+# Definição do modelo de IA que será utilizado: 
+# gemini-1.5-pro trabalha com: Áudio, imagens, vídeos e texto - Tarefas de raciocínio complexas que exigem mais inteligência
+# Lista de modelos https://ai.google.dev/gemini-api/docs/models/gemini
 model = genai.GenerativeModel(
-    "gemini-2.0-flash", generation_config=generation_config, safety_settings=safety_settings
+    "gemini-1.5-pro", generation_config=generation_config, safety_settings=safety_settings
 )
 # Modelos disponíveis
 # gemini-1.0-pro
