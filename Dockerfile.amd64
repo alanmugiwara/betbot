@@ -10,7 +10,7 @@ WORKDIR /app
 COPY app /app
 
 # Instala as dependências do Python
-RUN pip install --no-cache-dir -r requeriments.txt && adduser -S -H beti
+RUN pip install --no-cache-dir -r requirements.txt && adduser -S -H beti
 
 USER beti
 
