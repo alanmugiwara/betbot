@@ -1,6 +1,6 @@
 [![made Language {generic badge}](https://img.shields.io/badge/Made%20with-Python%203-8A2BE2)](https://github.com/alanmugiwara)
-[![create date](https://badges.pufler.dev/created/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
-[![last update date](https://badges.pufler.dev/Updated/alanmugiwara/betbot?color=8A2BE2)](https://github.com/alanmugiwara)
+![create date](https://img.shields.io/badge/Created-May%2011,%202024-8A2BE2)
+[![Last update](https://img.shields.io/github/last-commit/alanmugiwara/betbot?color=8A2BE2&label=Last%20Commit)](https://github.com/alanmugiwara/alanmugiwara)
 [![Commits Badge](https://img.shields.io/github/commit-activity/m/alanmugiwara/betbot.svg?color=8A2BE2)](https://github.com/alanmugiwara)
 [![last release](https://img.shields.io/github/v/release/alanmugiwara/betbot?color=8A2BE2&label=release&style=flat)](https://github.com/alanmugiwara)
 [![downloads counter](https://img.shields.io/github/downloads/alanmugiwara/betbot/total?color=8A2BE2)](https://github.com/alanmugiwara)
@@ -36,14 +36,18 @@ Beti Fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em te
 - [google-generativeai](https://pypi.org/project/google-generativeai/): Biblioteca de AI do Gemini para interagir com a API do Google.
 
 ## Containerização
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-Betbot-2496ED?logo=docker)](https://hub.docker.com/repository/docker/alanmugiwara/betbot/general)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-Betbot-2496ED?logo=docker)](https://hub.docker.com/r/alanmugiwara/betbot)
 
-O projeto está containerizado e disponível no Docker Hub. O container pode ser criado para arquiteturas arm64 e amd64.
+O projeto está containerizado e disponível no Docker Hub. O container pode ser criado para arquiteturas arm64 e amd64. Para maiores informações de build, acesse a bsdge do DockerHub acima.
 
-Para executar o container:
+**Para baixar a imgem para arm64:**
+``` bash
+docker pull --platform linux/arm64 alanmugiwara/betbot:0.3-arm64
 ```
-docker pull alanmugiwara/betbot
-docker run -d --name betbot alanmugiwara/betbot
+
+**Para baixar a imgem para amd64**
+``` bash
+docker pull --platform linux/amd64 alanmugiwara/betbot:0.3-amd64
 ```
 
 ## Implantação
@@ -96,11 +100,11 @@ Contato
 
 Para dúvidas, sugestões ou problemas, entre em contato com Álan Cruz:
 
-<div>
-<a href="https://instagram.com/alanmugiwaras" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
-<a href="mailto:alanufrb@gmail.com"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
+<a href="https://instagram.com/alancruz_tec" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="mailto:contato@alancruztec.com.br"><img loading="lazy" src="https://img.shields.io/badge/E--Mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
 <a href="https://linkedin.com/in/alansilvadacruz" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin"></a>
-</div>
+<a href="https://alancruztec.com.br" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-My%20Website-%230077B5?style=for-the-badge&logo=wordpress&logoColor=white" alt="Website"></a>
+
 
 Licença
 -------

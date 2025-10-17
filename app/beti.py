@@ -44,21 +44,12 @@ safety_settings = {
 # gemini-1.5-pro trabalha com: Áudio, imagens, vídeos e texto - Tarefas de raciocínio complexas que exigem mais inteligência
 # Lista de modelos https://ai.google.dev/gemini-api/docs/models/gemini
 model = genai.GenerativeModel(
-    "gemini-1.5-pro", generation_config=generation_config, safety_settings=safety_settings
+    "gemini-2.5-pro", generation_config=generation_config, safety_settings=safety_settings
 )
-# Modelos disponíveis
-# gemini-1.0-pro
-# gemini-1.0-pro-001
-# gemini-1.0-pro-latest
-# gemini-1.0-pro-vision-latest
-# gemini-1.5-pro-latest
-# gemini-pro
-# gemini-pro-vision
 
 # Variável que mantém o histórico da conversa. A IA poderá acessar o histórico da conversa
 # e fornece respostas mais contextuais e personalizadas. Terá uma memória.
 gemini_talk = model.start_chat(history=[])
-
 
 def obter_resposta_gemini(pergunta):
     """Obtém uma resposta do modelo Gemini, incluindo contexto da clínica."""
@@ -101,10 +92,8 @@ Aceitamos os seguintes planos de saúde:\nBradesco Saúde, Omnit e Hapivida. Con
     resposta_final = response.text
     return resposta_final
 
-
 # Estados da conversa
 AGUARDANDO_NOME, MENU_PRINCIPAL, AGUARDANDO_PERGUNTA = range(3)
-
 
 # O 'context' não é utilizado diretamente na função start porque ainda não há dados do usuário para manipular.
 # O 'context' precisa ser declarado para manter a assinatura padrão dos handlers do ConversationHandler.
@@ -125,7 +114,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(random.choice(saudacoes))
     return AGUARDANDO_NOME
 
-
 async def receber_nome(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Recebe o nome do usuário e apresenta o menu."""
     resposta = update.message.text
@@ -136,7 +124,6 @@ async def receber_nome(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     await apresentar_menu(update, context)
     return MENU_PRINCIPAL
-
 
 async def apresentar_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Apresenta o menu de opções."""
@@ -161,7 +148,6 @@ async def apresentar_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "<b>7</b> - Fazer uma pergunta diretamente."
     )
     await update.message.reply_text(texto_menu, parse_mode="HTML")
-
 
 def extrair_nome(resposta):
     """Extrai o nome do usuário da resposta."""
@@ -202,7 +188,6 @@ def extrair_nome(resposta):
             return match.group(1).strip()
     return "amigo(a)"
 
-
 async def handle_opcao(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Processa as opções do menu."""
     opcao = update.message.text
@@ -238,7 +223,6 @@ async def handle_opcao(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Digite '0' para voltar ao menu principal 👌🏾.")
     return MENU_PRINCIPAL
 
-
 async def responder_com_gemini(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Envia a pergunta para o Gemini e retorna a resposta."""
     pergunta = update.message.text
@@ -256,7 +240,6 @@ async def responder_com_gemini(update: Update, context: ContextTypes.DEFAULT_TYP
         )
         return AGUARDANDO_PERGUNTA
 
-
 async def voltar_ao_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Volta ao menu principal se o usuário digitar '0'."""
     if update.message.text == "0":
@@ -267,7 +250,6 @@ async def voltar_ao_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "Opção inválida. Digite '0' para voltar ao menu 🤔"
         )
         return MENU_PRINCIPAL
-
 
 async def informacoes_localizacao(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Fornece informações sobre a localização e contato da clínica com frases variadas."""
@@ -294,7 +276,6 @@ async def informacoes_especialidades(
     ]
     await update.message.reply_text(random.choice(especialidades_texto))
 
-
 async def informacoes_consultas(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Fornece informações sobre agendamento, remarcação e cancelamento de consultas."""
     context = context  # Utilização do context
@@ -306,7 +287,6 @@ async def informacoes_consultas(update: Update, context: ContextTypes.DEFAULT_TY
         "(em desenvolvimento)"
     )
     await update.message.reply_text(texto)
-
 
 async def informacoes_planos_saude(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Informa os planos de saúde aceitos pela clínica com frases variadas."""
@@ -320,7 +300,6 @@ async def informacoes_planos_saude(update: Update, context: ContextTypes.DEFAULT
     ]
     await update.message.reply_text(random.choice(planos_texto))
 
-
 async def informacoes_custos(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Informa os custos dos atendimentos."""
     context = context  # Utilização do context
@@ -333,13 +312,11 @@ async def informacoes_custos(update: Update, context: ContextTypes.DEFAULT_TYPE)
     )
     await update.message.reply_text(texto)
 
-
 async def transferir_atendente(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Simula a transferência do usuário para um atendente humano."""
     context = context  # Utilização do context
     texto = "Transferindo para uma chamda de voz...\nPor favor, aguarde\n\n...\n...\n\n...\n...\n?"
     await update.message.reply_text(texto)
-
 
 if __name__ == "__main__":
     application = ApplicationBuilder().token(BOT_TOKEN).build()
