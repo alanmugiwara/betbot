@@ -10,7 +10,7 @@ WORKDIR /app
 COPY app /app
 
 # Instala as dependências do Python sem cache
-RUN pip install --no-cache-dir -r requirements.txt && adduser --system beti
+RUN pip install --no-cache-dir -r requirements.txt && adduser --system --no-create-home beti
 
 # Loga com o usuário Beti
 USER beti
