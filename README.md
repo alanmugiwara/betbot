@@ -39,7 +39,7 @@ Beti Fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em te
 
 [![DockerHub](https://img.shields.io/badge/Docker%20Hub-Betbot-2496ED?logo=docker)](https://hub.docker.com/r/alanmugiwara/betbot)
 
-O projeto está containerizado e disponível no Docker Hub. O container pode ser criado para arquiteturas arm64 e amd64. Para maiores informações de build, clique aa badge do DockerHub acima.
+O projeto está containerizado e disponível no Docker Hub. O container pode ser criado para arquiteturas arm64 e amd64. Para maiores informações de build, clique na badge do DockerHub acima.
 
 **Para baixar a imgem para arm64:**
 
