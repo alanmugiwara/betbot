@@ -13,7 +13,6 @@
 [![test Coverage](https://api.codeclimate.com/v1/badges/6982b78246699cd2458f/test_coverage)](https://codeclimate.com/github/alanmugiwara/betbot/test_coverage)
 
 # Beti Fortalece: chatbot da clínica 'Cuidando de Você'
-
 Este é um chatbot para Telegram que simula uma recepcionista humana chamada Beti Fortalece, da Clínica fictícia Cuidando de Você. O bot usa o modelo de linguagem Gemini Pro da Google AI para responder a perguntas, fornecer informações sobre a clínica e interagir com os usuários de forma natural e acolhedora.
 
 Beti Fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em terras soteropolitanas.
@@ -21,7 +20,6 @@ Beti Fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em te
 [Beti Fortacele no youtube](https://www.youtube.com/watch?v=sPK7JUE68dU)
 
 ## Funcionalidades
-
 - **Personalidade Simulada:** A Beti possui uma personalidade amigável e acolhedora, simulando uma recepcionista humana.
 - **Informações da Clínica:** Fornecimento de informações sobre a localização, especialidades, planos de saúde aceitos e valores das consultas da clínica.
 - **Menu Interativo:** Navegação por um menu de opções para acessar informações desejadas através de números.
@@ -29,14 +27,12 @@ Beti Fortacele é uma sátira ao hit 'Beth fortalece' imortalizado em 2016 em te
 - **Detecção de Nomes:** A Beti usa expressões regulares para identificar o nome do usuário nas mensagens e personalizar as interações.
 
 ## Tecnologias Utilizadas
-
 - [Python 3.12.3](https://www.python.org/downloads/release/python-3123//): Linguagem de programação utilizada;
 - [Google AI Platform](https://aistudio.google.com/app/): Plataforma para acessar o modelo de linguagem Gemini Pro e gerar a API Key;
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot): Biblioteca Python para interagir com a API do Telegram;
 - [google-generativeai](https://pypi.org/project/google-generativeai/): Biblioteca de AI do Gemini para interagir com a API do Google.
 
 ## Containerização
-
 [![DockerHub](https://img.shields.io/badge/Docker%20Hub-Betbot-2496ED?logo=docker)](https://hub.docker.com/r/alanmugiwara/betbot)
 
 O projeto está containerizado e disponível no Docker Hub. O container pode ser criado para arquiteturas arm64 e amd64. Para maiores informações de build, clique na badge do DockerHub acima.
@@ -58,21 +54,17 @@ docker pull --platform linux/amd64 alanmugiwara/betbot:0.3-amd64
 Para que o bot fique online 24/7, além do container você também pode hospedar o script junto às variáveis de ambinente em um servidor. Plataformas como [Heroku](https://www.heroku.com/), [PythonAnywhere](https://www.pythonanywhere.com/), [Google Cloud Platform](https://cloud.google.com/) e [Amazon Web Services](https://aws.amazon.com/) oferecem opções de hospedagem para bots do Telegram. Consulte a documentação da plataforma escolhida para obter instruções de implantação.
 
 ## Personalização
-
 - Adaptação de contexto: Modificando a variável `instrucao_sistema` na função `obter_resposta_gemini` para personalizar o contexto do bot com informações.
 - Ajuste de personalidade: É possível incluir diferentes prompts e instruções no contexto para ajustar a personalidade do bot.
 - Novas features: A biblioteca `python-telegram-bot` permite adicionar mais recursos ao bot, como botões, menus, etc.
 
 ## Demonstração
-
----
-
+![Demonstração](https://github.com/alanmugiwara/betibot/blob/main/beti_demo.gif?raw=true)
 ![Demonstração](https://github.com/alanmugiwara/alanmugiwara.github.io/blob/main/img/bet_demo.gif?raw=true)
 
 Converse com a Beti [Beti Fortalece - Telgram Bot](https://t.me/BetiFortalece_bot)
 
 ## Compatbilidade
-
 ---
 
 python-telegram-bot: A versão mínima do Python para utilizar a biblioteca é `a 3.7.`
@@ -82,7 +74,6 @@ google-generativeai: A versão mínima do Python para utilizar a biblioteca é `
 ---
 
 ## Como Executar
-
 1. **Obtenha uma chave de API do Google AI Platform:**
 
    - Acesse [Google AI Studio](https://aistudio.google.com/app/).
@@ -103,11 +94,10 @@ google-generativeai: A versão mínima do Python para utilizar a biblioteca é `
    - Se o seu SO for baseado em Linux, apenas inverta as barras "\\" "/"
    ```bash
    cd \betbot\app
-   pip install -r requirements
+   pip install -r requirements.txt
    ```
 
 ## Contato
-
 Para dúvidas, sugestões ou problemas, entre em contato com Álan Cruz:
 
 <a href="https://instagram.com/alancruz_tec" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
@@ -116,7 +106,6 @@ Para dúvidas, sugestões ou problemas, entre em contato com Álan Cruz:
 <a href="https://alancruztec.com.br" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-My%20Website-%230077B5?style=for-the-badge&logo=wordpress&logoColor=white" alt="Website"></a>
 
 ## Licença
-
 Este projeto é licenciado sob a licença [GPL-3.0 license] - consulte o arquivo [LICENÇA](https://github.com/alanmugiwara/betbot?tab=GPL-3.0-1-ov-file) para obter detalhes.
 
 ---
